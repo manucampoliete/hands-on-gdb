@@ -20,7 +20,7 @@ int IntSetController::process(int limit) {
                 in >> val;
                 out << "is " << val << " in the set? " << set.has(val) << "\n";
                 break;
-            case 'C':
+            case 'c':
                 out << "count: " << set.count() << "\n";
                 break;
             case 'x':
