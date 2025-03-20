@@ -28,7 +28,7 @@ IntSet::IntSet() : root(nullptr), count_(0) {}
 
 bool IntSet::has(int val) const {
     node_t* const* n = find_node_for(val);
-    return (*n) == nullptr;
+    return (*n) != nullptr;
 }
 
 bool IntSet::add(int val) {
