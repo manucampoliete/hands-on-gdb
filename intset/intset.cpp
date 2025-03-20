@@ -94,7 +94,7 @@ std::list<int> IntSet::as_list() const {
 void IntSet::clear() {
     std::list<node_t*> to_remove;
 
-    // Set vació, lista vacía
+    // Set vacío, no hago nada
     if (!root)
         return;
 
