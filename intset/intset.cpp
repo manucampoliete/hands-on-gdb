@@ -70,7 +70,7 @@ std::list<int> IntSet::as_list() const {
 
     node_t *current = root->left;
 
-    while (!stack.empty()) {
+    while (!stack.empty() || current != nullptr) {
 
         // Buscamos el `int` mas chico (left)
         while (current) {
