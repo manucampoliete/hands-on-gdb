@@ -93,6 +93,11 @@ std::list<int> IntSet::as_list() const {
 
 void IntSet::clear() {
     std::list<node_t*> to_remove;
+
+    // Set vació, lista vacía
+    if (!root)
+        return;
+
     to_remove.push_back(root);
 
     while (!to_remove.empty()) {
