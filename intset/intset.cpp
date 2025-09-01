@@ -13,9 +13,9 @@ IntSet::node_t* const* IntSet::find_node_for(int val) const {
     node_t* const* current = &root;
 
     while (*current) {
-        if ((unsigned)(*current)->value == (unsigned)val)
+        if ((*current)->value == val)
             return current;
-        else if ((unsigned)(*current)->value > (unsigned)val)
+        else if ((*current)->value > val)
             current = &(*current)->left;
         else
             current = &(*current)->right;
