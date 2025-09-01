@@ -85,7 +85,7 @@ todos los elementos dejando a la estructura vacía con el método
 `IntSet::clear` (comando `x`)
 
 ```shell
-$ echo "a 21 a 67 l c x l c a 21 1 c" | ./bin/intset
+$ echo "a 21 a 67 l c x l c a 21 l c" | ./bin/intset
 21 added, was already in the set? false
 67 added, was already in the set? false
 list: 21 67
