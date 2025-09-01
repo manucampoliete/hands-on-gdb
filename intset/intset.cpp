@@ -92,6 +92,9 @@ std::list<int> IntSet::as_list() const {
 }
 
 void IntSet::clear() {
+    if (!root)
+        return;
+    
     std::list<node_t*> to_remove;
     to_remove.push_back(root);
 
